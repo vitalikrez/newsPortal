@@ -24,6 +24,10 @@ echo 'It\'s work ';
 echo 'test2';
 ?>
 
+<?php echo 'TestTo master';
+echo 'FFF';
+?>
+
 </body>
 
 </html>
