@@ -86,6 +86,13 @@
     <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=about" role="button">Про нас</a>
     <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=news" role="button">Новина</a>
 
+
+    <?php
+    echo 'It\'s work ';
+    echo 'test2';
+    ?>
+
+
     <header class="blog-header lh-1 py-3">
       <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-4 pt-1">
