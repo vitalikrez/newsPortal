@@ -13,7 +13,7 @@ define('VIEWS_DIR', __DIR__ . '/views');
 // DB connection
 define('MYSQL_DSN', "mysql:host=localhost;dbname=newsPortal");
 define('MYSQL_USER', "root");
-define('MYSQL_PASS', "root");
+define('MYSQL_PASS', /*"root"*/ "");
 
 
 // know how to load app classes

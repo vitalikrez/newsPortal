@@ -15,10 +15,31 @@
 
 <h1> <?= "Main ADMIN Page" ?> </h1>
 <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=home" role="button">Головна</a>
-<?php
-echo 'test';
-?>
+<!-- <a class="btn btn-primary" href="<?= '' // $_SERVER['PHP_SELF']
+                                      ?>?action=listPosts" role="button">Мої пости</a> -->
+<div style="display: flex;">
+  <?php foreach ($posts as $val) : ?>
+    <div style="flex-direction: row; margin-left: 0.5em; margin-right: 0.5em;">
 
+      <a style="color: black; text-decoration: none;" href="<?= $_SERVER['PHP_SELF'] ?>">
+        <h4 class="titlePost">
+          <?= $val["title"] ?>
+          <br>
+          <span>Posted: <?= $val['date_posted'] ?></span>
+          <span>Updated: <?= $val['date_updated'] ?></span>
+          </h2>
+          <!-- Якщо задати фіксовану ширину стиль знизу замінить функцію з php -->
+          <p style="
+      overflow: hidden; 
+      white-space: nowrap;
+      text-overflow: ellipsis;">
+            <?= strlen($val['content']) > 30 ? substr($val['content'], 0, 40) . "..." : $val['content'] ?>
+          </p>
+      </a>
+      <a class="btn btn-secondary">Видалити</a>
+    </div>
+  <?php endforeach ?>
+</div>
 </body>
 
 </html>
