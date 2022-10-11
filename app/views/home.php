@@ -73,27 +73,32 @@
   <!-- Custom styles for this template -->
   <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="<?= BASE_URL . "/css/blog.css" ?>">
+  <link rel="stylesheet" href="<?= BASE_URL."/css/blog.css" ?>">
 </head>
 
 <body>
 
-
   <div class="container">
     <!-- Лінки між контролерами -->
-    <h1> <?= "Main NewsPortal Page" ?> </h1>
-    <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=admin" role="button">Адмінка</a>
-    <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=about" role="button">Про нас</a>
-    <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=news" role="button">Новина</a>
+     <header>
+
+            <img style="height: 150px; width: 150px; " src="..\resource\logo.png"></img>
+
+            <!-- <h1> <?= "Main NewsPortal Page" ?> </h1> -->
+            <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=admin" role="button">Адмінка</a>
+            <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=about" role="button">Про нас</a>
+            <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=news" role="button">Новина</a>
 
 
-    <?php
-    echo 'It\'s work ';
-    echo 'test2';
-    ?>
+            <?php
+            echo 'It\'s work ';
+            echo 'test2';
+            ?>
+     </header>
+    
 
 
-    <header class="blog-header lh-1 py-3">
+    <!-- <header class="blog-header lh-1 py-3">
       <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-4 pt-1">
           <a class="link-secondary" href="#">Subscribe</a>
@@ -112,9 +117,9 @@
           <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
         </div>
       </div>
-    </header>
+    </header> -->
 
-    <div class="nav-scroller py-1 mb-2">
+    <!-- <div class="nav-scroller py-1 mb-2">
       <nav class="nav d-flex justify-content-between">
         <a class="p-2 link-secondary" href="#">World</a>
         <a class="p-2 link-secondary" href="#">U.S.</a>
@@ -130,7 +135,7 @@
         <a class="p-2 link-secondary" href="#">Travel</a>
       </nav>
     </div>
-  </div>
+  </div> -->
 
   <main class="container">
     <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
