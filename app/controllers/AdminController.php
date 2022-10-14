@@ -16,7 +16,9 @@ class AdminController
             );
         } catch (PDOException $e) {
             $error = 'Could not connect to database: ' . $e->getMessage();
-            require_once VIEWS_DIR . '/error.php';
+           // require_once VIEWS_DIR . '/error.php';
+           $page = 'error';
+           require_once VIEWS_PATH."/master.php";
             exit;
         }
         
@@ -31,17 +33,24 @@ class AdminController
     {
         $index = true ;
         if ($index) {
-            require_once VIEWS_DIR . '/homeAdmin.php';
+            //require_once VIEWS_DIR . '/homeAdmin.php';
+            $page = 'homeAdmin';
+            require_once VIEWS_PATH."/master.php";
         } else {
+
             $error = array();
             $error[] = 'База даних порожня!';
-            require_once VIEWS_DIR . '/error.php';
+           // require_once VIEWS_DIR . '/error.php';
+           $page = 'error';
+           require_once VIEWS_PATH."/master.php";
         }
     }
 
     public function save()
     {
-        require_once VIEWS_DIR . '/rezult.php';
+        //require_once VIEWS_DIR . '/rezult.php';
+        $page = 'rezult';
+        require_once VIEWS_PATH."/master.php";
     }
 
 }
