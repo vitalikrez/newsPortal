@@ -12,10 +12,10 @@ define('CLASSES_DIR', __DIR__ . '/classes');
 //define('VIEWS_DIR', __DIR__ . '/views');
 
 // DB connection
-define('MYSQL_DSN', "mysql:host=localhost;dbname=news");
+define('MYSQL_DSN', "mysql:host=localhost;dbname=newsportal");
 define('MYSQL_USER', "root");
-//define('MYSQL_PASS', "root");
-define('MYSQL_PASS', "");
+define('MYSQL_PASS', "root");
+//define('MYSQL_PASS', "");
 
 // know how to load app classes
 require_once __DIR__ . '/autoload.php';

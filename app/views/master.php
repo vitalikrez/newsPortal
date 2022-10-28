@@ -18,9 +18,10 @@
                     <a href="<?= $_SERVER['PHP_SELF'] ?>"> <img style="height: 150px; width: 150px; " src="..\resource\logo.png"></img></a>
                     
                         <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=admin" role="button">Адмінка</a>
-                        <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=news" role="button">Новина</a>  
+                        <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=news" role="button">Новини</a>  
                         <a class="btn btn-primary" href="<?= $_SERVER['PHP_SELF'] ?>?action=about" role="button">Про нас</a>  
-                </div> 
+                
+                      </div> 
                
                 <div style="height: 5px; background-color: red; "> </div>
              </header>
