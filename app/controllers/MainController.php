@@ -16,7 +16,9 @@ class MainController
             );
         } catch (PDOException $e) {
             $error = 'Could not connect to database: ' . $e->getMessage();
-            require_once VIEWS_DIR . '/error.php';
+           // require_once VIEWS_DIR . '/error.php';
+           $page = 'error';
+           require_once VIEWS_PATH."/master.php";
             exit;
          }
 
@@ -31,23 +33,31 @@ class MainController
     {
         $index = true;
         if ($index) {
-            require_once VIEWS_DIR . '/home.php';
+           // require_once VIEWS_DIR . '/home.php';
+           $page = 'home';
+           require_once VIEWS_PATH."/master.php";
         } else {
             $error = array();
             $error[] = 'База даних порожня!';
-            require_once VIEWS_DIR . '/error.php';
+            //require_once VIEWS_DIR . '/error.php';
+            $page = 'error';
+           require_once VIEWS_PATH."/master.php";
         }
     }
 
     public function about()
     {
-        require_once VIEWS_DIR . '/about.php';
+       // require_once VIEWS_DIR . '/about.php';
+        $page = 'about';
+        require_once VIEWS_PATH."/master.php";
 
     }
 
     public function news()
     {
-        require_once VIEWS_DIR . '/news.php';
+       // require_once VIEWS_DIR . '/news.php';
+       $page = 'news';
+       require_once VIEWS_PATH."/master.php";
     }
 
 
